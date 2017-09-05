@@ -8,6 +8,7 @@
     "build": "ng build",
     "test": "jest",
     "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -22,7 +23,10 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
+    "@types/jest": "20.0.8",
+    "babel-jest": "21.0.0",
     "core-js": "^2.4.1",
+    "jest-preset-angular": "2.0.5",
     "rxjs": "^5.4.2",
     "zone.js": "^0.8.14"
   },
@@ -49,13 +53,6 @@
   },
   "jest": {
     "preset": "jest-preset-angular",
-    "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts",
-    "transform": {
-      "^.+\\.(ts|html)$": "<rootDir>/node_modules/jest-preset-angular/preprocessor.js",
-      "^.+\\.js$": "babel-jest"
-    },
-    "transformIgnorePatterns": [
-      "node_modules/(?!@ngrx|@ng-bootstrap)"
-    ]
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts"
   }
 }

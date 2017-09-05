@@ -1,4 +1,4 @@
 import 'jest-preset-angular';
-import 'jestGlobalMocks';
+import './jestGlobalMocks'
 
 import 'rxjs/Rx';
