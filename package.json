@@ -23,8 +23,6 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
-    "@types/jest": "20.0.8",
-    "babel-jest": "21.0.0",
     "core-js": "^2.4.1",
     "jest-preset-angular": "2.0.5",
     "rxjs": "^5.4.2",
@@ -37,6 +35,9 @@
     "@types/jasmine": "~2.5.53",
     "@types/jasminewd2": "~2.0.2",
     "@types/node": "~6.0.60",
+    "@types/jest": "^19.2.2",
+    "jest": "^20.0.0",
+    "jest-preset-angular": "^2.0.1",
     "codelyzer": "~3.1.1",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
@@ -53,6 +54,14 @@
   },
   "jest": {
     "preset": "jest-preset-angular",
-    "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts"
+    "setupTestFrameworkScriptFile": "<rootDir>/src/setupJest.ts",
+    "transform": {
+      "^.+\\.(ts|html)$": "<rootDir>/node_modules/jest-preset-angular/preprocessor.js",
+      "^.+\\.js$": "babel-jest"
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!@ngrx|@ng-bootstrap)"
+    ],
+    "collectCoverageFrom": ["src/**/*.{ts,js}", "!src/**/entities/*.{js,ts}"]
   }
 }
