@@ -10,6 +10,7 @@ import {HttpModule} from '@angular/http';
 
 // RxJS operators
 import 'rxjs/add/operator/map';
+import {NotificationService} from './services/notification.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import 'rxjs/add/operator/map';
     HttpModule
   ],
   providers: [
-    StarWarsService
+    StarWarsService,
+    NotificationService
   ],
   bootstrap: [AppComponent]
 })

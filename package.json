@@ -25,20 +25,22 @@
     "@angular/router": "^4.2.4",
     "core-js": "^2.4.1",
     "jest-preset-angular": "2.0.5",
+    "jquery": "3.2.1",
     "rxjs": "^5.4.2",
+    "toastr": "2.1.2",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
     "@angular/cli": "1.3.1",
     "@angular/compiler-cli": "^4.2.4",
     "@angular/language-service": "^4.2.4",
-    "@types/node": "~6.0.60",
     "@types/jest": "^19.2.2",
-    "jest": "^20.0.0",
-    "jest-preset-angular": "^2.0.1",
+    "@types/node": "~6.0.60",
     "codelyzer": "~3.1.1",
     "jasmine-core": "~2.6.2",
     "jasmine-spec-reporter": "~4.1.0",
+    "jest": "^20.0.0",
+    "jest-preset-angular": "^2.0.1",
     "karma": "~1.7.0",
     "karma-chrome-launcher": "~2.1.1",
     "karma-cli": "~1.0.1",
@@ -60,6 +62,9 @@
     "transformIgnorePatterns": [
       "node_modules/(?!@ngrx|@ng-bootstrap)"
     ],
-    "collectCoverageFrom": ["src/**/*.{ts,js}", "!src/**/entities/*.{js,ts}"]
+    "collectCoverageFrom": [
+      "src/**/*.{ts,js}",
+      "!src/**/entities/*.{js,ts}"
+    ]
   }
 }
