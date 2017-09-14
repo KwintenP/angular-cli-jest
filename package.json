@@ -63,8 +63,9 @@
       "node_modules/(?!@ngrx|@ng-bootstrap)"
     ],
     "collectCoverageFrom": [
-      "src/**/*.{ts,js}",
-      "!src/**/entities/*.{js,ts}"
+      "src/app/**/*.{ts,js}",
+      "!src/app/*.{ts,js}",
+      "!src/**/environments/*.{js,ts}"
     ]
   }
 }

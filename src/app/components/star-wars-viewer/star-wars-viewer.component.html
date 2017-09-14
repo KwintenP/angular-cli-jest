@@ -1,0 +1,11 @@
+<p>
+  star-wars-viewer works!
+</p>
+
+<form [formGroup]="idFormGroup" (ngSubmit)="getCharacter()">
+  <label for="starWarsId">StarWars Id</label>
+  <input type="text" id="starWarsId" formControlName="id"/>
+  <button type="submit">Get character</button>
+</form>
+
+{{character$ | async | json}}

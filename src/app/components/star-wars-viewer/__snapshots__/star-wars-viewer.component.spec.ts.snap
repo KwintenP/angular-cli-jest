@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StarWarsViewerComponent snapshot testing should be created 1`] = `
+<app-star-wars-viewer
+  formBuilder={[Function Object]}
+  idFormGroup={[Function FormGroup]}
+  notificationService={[Function Object]}
+  starwarsService={[Function Object]}
+>
+  <p>
+    star-wars-viewer works!
+  </p><form>
+    <label
+      for="starWarsId"
+    >
+      StarWars Id
+    </label>
+    <input
+      formcontrolname="id"
+      id="starWarsId"
+      type="text"
+    />
+    <button
+      type="submit"
+    >
+      Get character
+    </button>
+  </form>null
+</app-star-wars-viewer>
+`;
+
+exports[`StarWarsViewerComponent snapshot testing should list the characters when the data is fetched 1`] = `
+<app-star-wars-viewer
+  character$={[Function Observable]}
+  formBuilder={[Function Object]}
+  idFormGroup={[Function FormGroup]}
+  notificationService={[Function Object]}
+  starwarsService={[Function Object]}
+>
+  <p>
+    star-wars-viewer works!
+  </p><form>
+    <label
+      for="starWarsId"
+    >
+      StarWars Id
+    </label>
+    <input
+      formcontrolname="id"
+      id="starWarsId"
+      type="text"
+    />
+    <button
+      type="submit"
+    >
+      Get character
+    </button>
+  </form>{ "name": "Luke Skywalker" }
+</app-star-wars-viewer>
+`;

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SnapshotExampleComponent should match the previous snapshot 1`] = `
+<app-snapshot-example
+  data={[Function Array]}
+  title={[Function String]}
+  visible={[Function Boolean]}
+>
+  <p>
+    snapshot-example workss!
+  </p>Dit is een dynamisch titeltje<div>
+    test
+  </div><div>
+    test2
+  </div><div>
+    test3
+  </div><div>
+    Dit is zichtbaar
+  </div>
+</app-snapshot-example>
+`;
+
+exports[`SnapshotExampleComponent should match the previous snapshot2 1`] = `
+<app-snapshot-example
+  data={[Function Array]}
+  title={[Function String]}
+  visible={[Function Boolean]}
+>
+  <p>
+    snapshot-example workss!
+  </p>Dit is een dynamisch titeltje<div>
+    test
+  </div><div>
+    test2
+  </div><div>
+    test3
+  </div><div>
+    Dit is zichtbaar
+  </div>
+</app-snapshot-example>
+`;
