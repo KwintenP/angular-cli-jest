@@ -1,18 +1,31 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
-import {SnapshotTestComponent} from './components/snapshot-test/snapshot-test.component';
+import {AppComponent} from './app.component';
+import {SnapshotExampleComponent} from './components/snapshot-example/snapshot-example.component';
+import {ReactiveFormsModule} from '@angular/forms';
+import {StarWarsViewerComponent} from './components/star-wars-viewer/star-wars-viewer.component';
+import {StarWarsService} from './services/star-wars.service';
+import {HttpModule} from '@angular/http';
+
+// RxJS operators
+import 'rxjs/add/operator/map';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SnapshotTestComponent
+    SnapshotExampleComponent,
+    StarWarsViewerComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ReactiveFormsModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [
+    StarWarsService
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
