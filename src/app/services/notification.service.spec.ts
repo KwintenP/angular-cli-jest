@@ -21,13 +21,13 @@ describe('NotificationService', () => {
     });
   });
 
-  // describe('on error', () => {
-  //   it('should call the toastr error message', () => {
-  //     error.mockReturnValue('test')
-  //
-  //     service.showError('message');
-  //
-  //     expect(error).toHaveBeenCalled();
-  //   });
-  // });
+  describe('on error', () => {
+    it('should call the toastr error message', () => {
+      error.mockReturnValue('test')
+
+      service.showError('message');
+
+      expect(error).toHaveBeenCalled();
+    });
+  });
 });
