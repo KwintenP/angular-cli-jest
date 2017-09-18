@@ -28,7 +28,7 @@ describe('StarWarsService', () => {
 
       result$.subscribe((result) => {
         expect(result).toBe(result);
-      })
+      });
 
       expect(httpMock.get).toHaveBeenCalled();
       // (httpMock.get as Spy).calls.length

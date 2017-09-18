@@ -24,9 +24,8 @@ describe('SnapshotExampleComponent', () => {
   });
 
 
-  it('should match the previous snapshot2', () => {
+  it('should match the previous snapshot with the part visible', () => {
     component.visible = true;
-    fixture.detectChanges();
     expect(fixture).toMatchSnapshot();
   });
 });

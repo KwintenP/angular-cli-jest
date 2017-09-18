@@ -64,8 +64,7 @@
     ],
     "collectCoverageFrom": [
       "src/app/**/*.{ts,js}",
-      "!src/app/*.{ts,js}",
-      "!src/**/environments/*.{js,ts}"
+      "!src/app/*.{ts,js}"
     ]
   }
 }

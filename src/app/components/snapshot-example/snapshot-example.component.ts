@@ -11,7 +11,7 @@ export class SnapshotExampleComponent implements OnInit {
   title: string;
   data: [any];
 
-  visible = true;
+  visible = false;
 
   constructor() {
   }

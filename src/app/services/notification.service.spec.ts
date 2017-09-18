@@ -3,7 +3,6 @@ import {error, success} from 'toastr';
 
 jest.mock('toastr');
 
-
 describe('NotificationService', () => {
   let service: NotificationService;
 
@@ -13,7 +12,7 @@ describe('NotificationService', () => {
 
   describe('on succes', () => {
     it('should call the toastr success message', () => {
-      success.mockReturnValue('test')
+      // success.mockReturnValue('test');
 
       service.showSuccess('message');
 
@@ -23,8 +22,6 @@ describe('NotificationService', () => {
 
   describe('on error', () => {
     it('should call the toastr error message', () => {
-      error.mockReturnValue('test')
-
       service.showError('message');
 
       expect(error).toHaveBeenCalled();

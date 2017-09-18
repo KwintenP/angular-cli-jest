@@ -4,7 +4,7 @@ exports[`SnapshotExampleComponent should match the previous snapshot 1`] = `
 <app-snapshot-example
   data={[Function Array]}
   title={[Function String]}
-  visible={[Function Boolean]}
+  visible="false"
 >
   <p>
     snapshot-example workss!
@@ -14,13 +14,11 @@ exports[`SnapshotExampleComponent should match the previous snapshot 1`] = `
     test2
   </div><div>
     test3
-  </div><div>
-    Dit is zichtbaar
   </div>
 </app-snapshot-example>
 `;
 
-exports[`SnapshotExampleComponent should match the previous snapshot2 1`] = `
+exports[`SnapshotExampleComponent should match the previous snapshot with the part visible 1`] = `
 <app-snapshot-example
   data={[Function Array]}
   title={[Function String]}
@@ -34,8 +32,6 @@ exports[`SnapshotExampleComponent should match the previous snapshot2 1`] = `
     test2
   </div><div>
     test3
-  </div><div>
-    Dit is zichtbaar
   </div>
 </app-snapshot-example>
 `;
